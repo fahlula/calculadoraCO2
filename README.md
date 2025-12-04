@@ -17,12 +17,6 @@ Uma aplicação web interativa para calcular emissões de CO₂ em viagens entre
 
 [Ver aplicação ao vivo](https://fahlula.github.io/calculadoraCO2/)
 
-## 📸 Screenshots
-
-![Calculadora](docs/screenshot-calculator.png)
-![Resultados](docs/screenshot-results.png)
-![Comparação](docs/screenshot-comparison.png)
-
 ## 🛠️ Tecnologias
 
 - **HTML5**: Estrutura semântica
