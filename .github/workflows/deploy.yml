@@ -1,0 +1,56 @@
+# Workflow para deploy automático no GitHub Pages
+name: Deploy to GitHub Pages
+
+# Gatilhos de execução
+on:
+  # Executar em push para branch main
+  push:
+    branches:
+      - main
+  
+  # Permitir execução manual do workflow
+  workflow_dispatch:
+
+# Permissões necessárias para o GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Configuração de concorrência
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# Job de deployment
+jobs:
+  deploy:
+    # Configuração do ambiente
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    # Runner do GitHub Actions
+    runs-on: ubuntu-latest
+    
+    # Passos do deployment
+    steps:
+      # 1. Fazer checkout do repositório
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      # 2. Configurar GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      
+      # 3. Fazer upload dos arquivos estáticos
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Deploy de todos os arquivos da raiz do projeto
+          path: '.'
+      
+      # 4. Deploy no GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
