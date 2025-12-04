@@ -92,7 +92,7 @@ Ponto de entrada da aplicação:
 
 1. **Clone o repositório**
    ```bash
-   git clone https://github.com/seu-usuario/seu-repo.git
+   git clone https://github.com/fahlula/calculadoraCO2.git
    cd seu-repo
    ```
 
