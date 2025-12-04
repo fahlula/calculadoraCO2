@@ -182,8 +182,8 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## 📧 Contato
 
-- GitHub: [@seu-usuario](https://github.com/seu-usuario)
-- LinkedIn: [Seu Nome](https://linkedin.com/in/seu-perfil)
+- GitHub: [@seu-usuario](https://github.com/fahlula)
+- LinkedIn: [Seu Nome](https://linkedin.com/in/fabiana-almeida-dev)
 
 ---
 
