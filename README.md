@@ -1,6 +1,5 @@
 # 🍃 Calculadora de Emissão de CO₂
 
-[![Deploy to GitHub Pages](https://github.com/seu-usuario/seu-repo/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)](https://github.com/seu-usuario/seu-repo/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 Uma aplicação web interativa para calcular emissões de CO₂ em viagens entre cidades brasileiras, comparar diferentes meios de transporte e estimar créditos de carbono necessários para compensação.
